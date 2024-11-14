@@ -50,7 +50,6 @@ class main
         ]);
 
         $discord->on("ready", function (Discord $discord){
-            var_dump(1);
 
             foreach ($discord->guilds as $guild){
                 $command = new Command($discord, ["name" => "kiti", "description" => "死ね"]);
