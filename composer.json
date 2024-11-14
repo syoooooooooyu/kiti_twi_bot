@@ -1,0 +1,17 @@
+{
+    "name": "syouyu/kiti_twi_bot",
+    "autoload": {
+        "psr-4": {
+            "\\": "./"
+        }
+    },
+    "authors": [
+        {
+            "name": "syoyu",
+            "email": "suspyouyu@gmail.com"
+        }
+    ],
+    "require": {
+        "team-reflex/discord-php": "^7.3"
+    }
+}
