@@ -28,6 +28,20 @@ class main
 
     public function run(): void
     {
+
+        if(!file_exists(__DIR__."/token")) {
+            mkdir(__DIR__."/token");
+            file_put_contents(__DIR__."/token/discord_token.txt", "");
+            echo "tokenを入力してねｗ";
+            return;
+        }
+
+        if(!file_exists(__DIR__."/token/discord_token.txt")){
+            file_put_contents(__DIR__."/token/discord_token.txt", "");
+            echo "tokenを入力してねｗ";
+            return;
+        }
+
         $token = file_get_contents(__DIR__ . "/token/discord_token.txt");
 
         $discord = new Discord([
